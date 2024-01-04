@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justice GPT Business Law helper</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/business-law.css" />
+</head>
+
+<body>
+  <!-- <div class="splash-screen">
+        <img class="splash-img" src="./images/loading.gif">
+    </div> -->
+
+  <nav>
+    <div>
+      <img class="glb_logo remove" style="opacity: 0" src="./images/glb_logo.png" />
+    </div>
+    <div class="nav_links">
+      <a href="./index.html">Home</a>
+      <a href="./try.html">TRY</a>
+      <a href="./about.html">About</a>
+    </div>
+    <div>
+      <img class="glb_logo" style="opacity: 0;" src="./images/glb_logo.png" alt="GLB_Logo" />
+    </div>
+  </nav>
+
+  <form class="form">
+    <h1>Business Law</h1>
+    <h2>Submit Case Details</h2>
+    <div class="container">
+      <label for="name">Name:</label><br />
+      <input class="input" autocomplete="off" type="text" id="name" name="name" placeholder="Enter your legal name."
+        required />
+      <br />
+      <label for="email">Email:</label><br />
+      <input class="input" autocomplete="off" type="email" id="email" name="email" placeholder="Enter your legal mail."
+        required />
+      <br />
+      <label for="age">Age:</label><br />
+      <input class="input" autocomplete="off" type="number" id="age" name="age"
+        placeholder="Enter age according to legal records." required />
+      <br />
+      <label for="summary">Summary:</label><br />
+      <textarea class="input" autocomplete="off" id="summary" name="summary"
+        placeholder="Enter a brief summary of your case." required></textarea>
+      <br />
+      <label for="description">Description:</label><br />
+      <textarea class="input" autocomplete="off" id="description" name="description"
+        placeholder="Enter a detailed description of your case. Mention how it started and how its affecting you."
+        required></textarea>
+      <br />
+      <label for="criminal-history">Criminal History (if any) :</label><br />
+      <textarea class="input" autocomplete="off" id="criminal_history" name="criminal-history"
+        placeholder="Enter your criminal history (if any)."></textarea>
+      <br /><br />
+    </div>
+  </form>
+  <div class="save-grp">
+    <a href="#chat"><button id="cta-btn">Submit</button></a>
+  </div>
+
+  <section id="chat">
+    <div id="chat-window">
+      <div class="chat-window">
+        <div class="main-title">Justice GPT</div>
+        <div id="chat-messages"></div>
+        <form id="chat-form">
+          <input type="text" id="chat-input" autocomplete="off" placeholder="Type Here" required />
+          <button class="send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+    <script src="./js/business-law.js"></script>
+    <script>
+      document.getElementById("cta-btn").click(function () {
+        document.getElementsByClassName("input").classList.add("disabled");
+      });
+    </script>
+  </section>
+</body>
+
+</html>

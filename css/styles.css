@@ -1,0 +1,261 @@
+@import url(https://db.onlinewebfonts.com/c/15a7d1d71610b5082933b2955bb8bc2e?family=Ihana+Perkele+Alaston);
+
+:root {
+  font-size: 10px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #dcccde;
+  background-image: url("../images/bg.png");
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden; */
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+nav {
+  background-color: #403042;
+  height: 9.5rem;
+  width: 100%;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.glb_logo {
+  width: 10rem;
+  height: auto;
+  margin-right: 4rem;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_links a {
+  font-family: "Ihana Perkele Alaston", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* .bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+} */
+
+#home {
+  padding: 10rem;
+  margin: 0;
+  text-align: center;
+}
+
+.name {
+  padding: 5rem 2rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.lady {
+  position: fixed;
+  left: calc(50% - 22rem);
+  bottom: 0%;
+  width: 62rem;
+  height: auto;
+  margin-left: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.desc {
+  position: fixed;
+  top: 65%;
+  color: white;
+  font-family: "Akrobat";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: justify;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc p {
+  padding: 2rem;
+  width: 50%;
+  background-color: #403042;
+}
+
+.desc p a {
+  color: white;
+  text-decoration: none;
+  width: 50%;
+}
+
+.cta-grp {
+  display: flex;
+  justify-content: space-between;
+  width: 54%;
+}
+
+.cta-btn {
+  background-color: #403042;
+  color: white;
+  font-family: "Akrobat", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.splash-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+  background-color: #403042;
+  animation: fadeinout 3s linear forwards;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .remove {
+    display: none;
+  }
+
+  nav {
+    height: 10rem;
+    width: 100%;
+  }
+
+  #home {
+    padding: 0rem;
+  }
+
+  .name {
+    flex-wrap: wrap;
+    width: 40rem;
+    padding: 15rem 1rem;
+  }
+
+  .justice,
+  .gpt {
+    width: auto;
+    height: 15rem;
+  }
+
+  .lady {
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+  }
+
+  .desc {
+    position: absolute;
+    top: calc(100% - 20rem);
+    bottom: 0;
+    z-index: 2;
+    color: white;
+    font-family: "Akrobat";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: justify;
+    width: 80%;
+  }
+
+  .desc p {
+    padding: 1rem;
+    width: 100%;
+    background-color: #403042;
+  }
+
+  .desc p a {
+    color: white;
+    text-decoration: none;
+    width: 50%;
+  }
+
+  .cta-grp {
+    width: 100%;
+  }
+
+  .glb_logo {
+    width: 9rem;
+    height: auto;
+    margin-right: 0rem;
+    padding-right: 2rem;
+  }
+
+  .nav_links a {
+    margin: 0;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .desc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
